@@ -1,0 +1,18 @@
+
+digraph structs {
+
+    graph [rankdir=LR];
+    node [shape=plaintext];
+
+       
+    x_1  -> a [label = w_1];
+    x_2  -> a [label = w_2];
+    x_3  -> a [label = w_3];
+     
+
+    a[shape=circle texlbl="$\sum_{i=1}^{n} x_i w_i $" margin="0.2"];
+
+    a -> y_i[label=" ", texlbl="$f \left( \sum_{i=1}^{n} x_i w_i \right) $" minlen=2];
+    
+
+}

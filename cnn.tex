@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[x11names, svgnames, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{100cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: x_1 -> a
+  \draw [->] (54.165bp,113.61bp) .. controls (70.18bp,106.31bp) and (90.671bp,96.962bp)  .. (117.55bp,84.706bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (84.5bp,112.5bp) node {$w_1$};
+  % Edge: a -> y_i
+  \draw [->] (176.13bp,72.0bp) .. controls (196.02bp,72.0bp) and (222.06bp,72.0bp)  .. (253.42bp,72.0bp);
+  \draw (214.81bp,79.5bp) node {$f \left( \sum_{i=1}^{n} x_i w_i \right) $};
+  % Edge: x_2 -> a
+  \draw [->] (54.165bp,72.0bp) .. controls (69.092bp,72.0bp) and (87.907bp,72.0bp)  .. (114.61bp,72.0bp);
+  \draw (84.5bp,79.5bp) node {$w_2$};
+  % Edge: x_3 -> a
+  \draw [->] (54.165bp,30.389bp) .. controls (70.18bp,37.692bp) and (90.671bp,47.038bp)  .. (117.55bp,59.294bp);
+  \draw (84.5bp,56.5bp) node {$w_3$};
+  % Node: x_1
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (27.0bp,126.0bp) node {$x_1$};
+\end{scope}
+  % Node: a
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (145.41bp,72.0bp) ellipse (30.31bp and 30.31bp);
+  \draw (145.41bp,72.0bp) node {$\sum_{i=1}^{n} x_i w_i $};
+\end{scope}
+  % Node: y_i
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (280.81bp,72.0bp) node {$y_i$};
+\end{scope}
+  % Node: x_2
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (27.0bp,72.0bp) node {$x_2$};
+\end{scope}
+  % Node: x_3
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (27.0bp,18.0bp) node {$x_3$};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+
